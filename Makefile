@@ -3,14 +3,8 @@ GCC = gcc $(CFLAGS)
 OBJS =  maze.o path.o pa07.o
 VALGRIND = valgrind --tool=memcheck --leak-check=yes 
 
-# This Makefile can be shortened by using loop. 
-# It shows all steps to explain what it does
-
-# test integrate1 using five different functions
-# each function is tested using three sets of input data
 all: pa07
 	
-
 pa07: $(OBJS) path.h maze.h
 	$(GCC) $(OBJS) -o pa07
 
